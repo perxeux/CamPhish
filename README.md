@@ -1,102 +1,56 @@
 # CamPhish
-CamPhish
-🔍 **CamPhish VER 1.7  Así Te Espían por la Cámara del Móvil Sin Que Te Des Cuenta 📱👀**
+Grab cam shots from target's phone front camera or PC webcam just sending a link.
+![CamPhish](https://techchip.net/wp-content/uploads/2020/04/camphish.jpg)
 
-¿Alguna vez te has preguntado cómo podrían espiarte a través de la cámara de tu móvil sin que te des cuenta? Con CamPhish, es posible. Esta innovadora herramienta es utilizada por muchos ciberdelincuentes, les permite crear enlaces falsos que, cuando se abren en cualquier dispositivo, activan silenciosamente la cámara sin necesidad de permisos explícitos. Y sí, con Apple también funciona.
+# What is CamPhish?
+<p>CamPhish is techniques to take cam shots of target's phone front camera or PC webcam. CamPhish Hosts a fake website on in built PHP server and uses ngrok & serveo to generate a link which we will forward to the target, which can be used on over internet. website asks for camera permission and if the target allows it, this tool grab camshots of target's device</p>
 
-🔹 Características Destacadas de CamPhish:
+## Features
+<p>In this tool I added two automatic webpage templates for engaged target on webpage to get more picture of cam</p>
+<ul>
+  <li>Festival Wishing</li>
+  <li>Live YouTube TV</li>
+   <li>Online Meeting [Beta]</li>
+</ul>
+<p>simply enter festival name or youtube's video ID</p>
 
-Acceso discreto a cámaras en tiempo real, sin que la víctima lo sepa.
-Funciona en todos los sistemas operativos y dispositivos móviles.
-Evita la detección por antivirus y firewalls.
-Personalización de enlaces para atraer a cualquier objetivo.
+## This Tool Tested On :
+<ul>
+  <li>Kali Linux</li>
+  <li>Termux</li>
+  <li>MacOS</li>
+  <li>Ubuntu</li>
+  <li>Parrot Sec OS</li>
+</ul>
 
-🔹 ¿Cómo Funciona? Simplemente envía un enlace generado por CamPhish a tu objetivo. Una vez que lo abran, la cámara se activará automáticamente, permitiéndote ver lo que están viendo en tiempo real.
-
-🔹 Descubre Más y Contribuye: 
-CamPhish es un proyecto de código abierto. Si estás interesado en explorar su código, contribuir o realizar pruebas éticas de penetración te dejo el enlace pero procura que te sirva para aprender a protegerte así que usa esta herramienta siempre con fines éticos.
-
-
-primero debemos registrarnos en NGROK:
-
-despues de registrarnos podremos obtener el el token en NGROK, este token lo vamos a necesitar para el uso del aplicativo.
-
-**Instalacion:**
-
-CamPhish es una técnica para tomar fotografías de la cámara frontal del teléfono del objetivo o de la cámara web de la PC. CamPhish aloja un sitio web falso en un servidor PHP integrado y utiliza ngrok y servero para generar un enlace que reenviaremos al objetivo, que se puede utilizar a través de Internet. El sitio web solicita permiso de la cámara y, si el objetivo lo permite, esta herramienta toma fotografías del dispositivo del objetivo.
-
-CamPhish es una técnica para tomar fotografías de la cámara frontal del teléfono del objetivo o de la cámara web de la PC. CamPhish aloja un sitio web falso en un servidor PHP integrado y utiliza ngrok y servero para generar un enlace que reenviaremos al objetivo, que se puede utilizar a través de Internet. El sitio web solicita permiso de la cámara y, si el objetivo lo permite, esta herramienta toma fotografías del dispositivo del objetivo.
-​
-​
-**Clone using the web URL**.
-​
-```https://github.com/perxeux/CamPhish.git```
-​​
-​
-**PRIMERO NECESITAREMOS INSTALAR NGROK EN KALI LINUX**
-​
-​Le damos click en empezar gratis
-​creamos una cuenta
-​
-​
-**¿Qué es CamPhish?**
-​
-CamPhish es una técnica para tomar fotografías de la cámara frontal del teléfono del objetivo o de la cámara web de la PC. CamPhish aloja un sitio web falso en un servidor PHP integrado y utiliza ngrok y servero para generar un enlace que reenviaremos al objetivo, que se puede utilizar a través de Internet. El sitio web solicita permiso de la cámara y, si el objetivo lo permite, esta herramienta toma fotografías del dispositivo del objetivo.
-​
-​
-**Esta herramienta probada en:**
-​
-KaliLinux
-Termux
-Mac OS
-ubuntu
-Sistema operativo Parrot Sec
-
-paquetes o librerias necesarias:
-```
-sudo apt-get -y install php openssh git wget
-```
-
-**Instalación (Kali Linux/Termux):**
-
-libreria necesiaria antes de instalarlo en termux
-```
-pkg install php openssh git wget
-```
-
-**Descarga:**
+# Installing and requirements
+<p>This tool require PHP for webserver, SSH or serveo link. First run following command on your terminal</p>
 
 ```
-git clone https://github.com/perxeux/CamPhish
+apt-get -y install php openssh git wget
+```
+
+## Installing (Kali Linux/Termux):
+
+```
+git clone https://github.com/techchipnet/CamPhish
 cd CamPhish
 bash camphish.sh
 ```
 
-## Características
-En esta herramienta agregué dos plantillas de página web automáticas para el objetivo comprometido en la página web para obtener más imágenes de la cámara.
+## Change Log:
 
-seleccionamos : 01 ngrok
+<p><b>Version: 1.7:</b> Fix and add support</p>
+<ul>
+  <li>fixed: termux failed to get home directory</li>
+  <li>Add support for Apple sillicon (M1/M2/M3 ARM64)</li>
+  <li>Add support for arm64 like Raspberry Pi</li>
+</ul>
+<p><b>Version: 1.6:</b> Fix ngrok direct link generate</p>
+<p><b>Version: 1.5:</b> Add new online meeting template</p>
+<p><b>Version: 1.4:</b> Ngrok authtoken update</p>
+<p><b>Version: 1.3:</b> Fix ngrok direct link</p>
 
-nos saldra las siguients opciones:
-
-Festival Deseando
-YouTube TV en vivo
-Reunión en línea [Beta]
-
-seleccionamos : 02. live youtube tv
-
-nos pedira un enlace de youtube ejemplo:  https://youtube.com/watch?v=pHGBI0iqAV0&feature=shared
-
-nos pedira el token de NGROK
-
-nos generara un link y por medio de distractores e ingenieria social adjuntaremos en link a un mensaje para engañar al usurio y que acceda al link
-
-en el directorio CamPhish, empezara a guardar las imagenes de la camara frontal
-
-PROYECTO ORIGINAL DE tecnichipnetnet : https://github.com/techchipnet/CamPhish
-
-Listo !!!!!!!
-
-
-
-
+#### For More Video subcribe <a href="http://youtube.com/techchipnet">TechChip YouTube Channel</a>
+<p>CamPhish is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
+<p>CamPhish is inspired by https://github.com/thelinuxchoice/ Big thanks to @thelinuxchoice</p>
