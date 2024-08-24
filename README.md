@@ -30,7 +30,7 @@ CamPhish es una técnica para tomar fotografías de la cámara frontal del telé
 ​
 **Clone using the web URL**.
 ​
-https://github.com/perxeux/CamPhish.git
+```https://github.com/perxeux/CamPhish.git```
 ​​
 ​
 **PRIMERO NECESITAREMOS INSTALAR NGROK EN KALI LINUX**
@@ -53,9 +53,9 @@ ubuntu
 Sistema operativo Parrot Sec
 
 paquetes o librerias necesarias:
-
+```
 sudo apt-get -y install php openssh git wget
-
+```
 
 **Instalación (Kali Linux/Termux):**
 
@@ -66,9 +66,11 @@ pkg install php openssh git wget
 
 **Descarga:**
 
+```
 git clone https://github.com/perxeux/CamPhish
 cd CamPhish
 bash camphish.sh
+```
 
 ## Características
 En esta herramienta agregué dos plantillas de página web automáticas para el objetivo comprometido en la página web para obtener más imágenes de la cámara.
