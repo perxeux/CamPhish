@@ -15,8 +15,9 @@ Personalización de enlaces para atraer a cualquier objetivo.</p>
    <li>Online Meeting [Beta]</li>
 </ul>
 <p>agregamos aqui un link de youtube video ID</p>
-<p>nos pedira el token de NGROK</p>
-<p>Nos dara un link que ese sera el que enviaremos</p>
+<p>nos pedira el token de NGROK, Lo ingresamos</p>
+<p>Nos dara un link que ese será el que enviaremos</p>
+<p>las imagenes recolectadas las copiara a la carpeta CamPhish</p>
 
 ## This Tool Tested On :
 <ul>
